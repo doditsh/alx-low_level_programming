@@ -1,8 +1,3 @@
-*
- * File: 0-positive_or_negative.c
- * Author: Tshisekedi dodi Tshionza
- */
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -12,8 +7,7 @@
  *        it is positive, negative, or zero.
  *
  * Return: 0.  
- * To show that the code ran successfully 
-*/
+ */
 int main(void)
 {
 	int n;
