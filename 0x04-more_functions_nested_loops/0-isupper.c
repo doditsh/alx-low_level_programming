@@ -7,18 +7,10 @@
 /*
  *main-write a function that check for uppercase Return:Always0.
  */
-int main(void)
-{
-	char ch;
-/*Input character from user*/
-		printf("Enter any character:");
-scanf("%c", &ch);
-if (ch >= 'A' &&  ch <= 'Z')
-{
-printf("'%c'is uppercase letter.", ch);
 
+int _isupper(int c)
+{
+	return (c >= 'A' && c <= 'Z');
 }
 
 
-return (0);
-}
