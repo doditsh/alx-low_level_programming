@@ -1,7 +1,4 @@
-/*
- * File: 0-isupper.c
- * Auth: Thisekedi Dodi Tshionza
- */
+
 #include "main.h"
 #include <stdio.h>
 /*
