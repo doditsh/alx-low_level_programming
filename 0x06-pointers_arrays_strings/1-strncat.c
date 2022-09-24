@@ -1,25 +1,31 @@
 #include "main.h"
-#include "strlen.c"
+
 /**
- * _strncat - concatenates n bytes from src string to dest string
+ * _strncat - concatenates n bytes from a string to another
  * @dest: destination string
  * @src: source string
- * @n: number of bytes to copy from src string
- * Return: Returns a pointer to dest
+ * @n: number of bytes of str to concatenate
+ *
+ * Return: a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *dest_head = dest;
+	int i, j;
 
-	n = (n > _strlen(src)) ? _strlen(src) : n;
-	while (*dest != '\0')
-		dest++; /* advance to the end of dest */
-	while (n-- > 0)
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0' && j < n)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	*dest = '\0'; /* inserting null terminator */
-	return (dest_head);
+
+	dest[i] = '\0';
+
+	return (dest);
 }
